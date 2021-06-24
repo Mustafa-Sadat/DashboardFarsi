@@ -1,0 +1,378 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 80%;
+}
+body {
+    direction: rtl;
+    text-align: right;
+    font-family:IranSans;
+    background-color: rgb(252, 252, 252);
+}
+
+
+@font-face {
+  font-family:IranSans;
+  src: url(../fonts/font.woff2);
+}
+
+
+
+
+header .navbar {
+    background-color: #101522;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+  }
+
+header .navbar-toggler{
+  font-size:30px;
+  color:#fff !important;
+  
+}
+
+
+
+header .nav-item{
+  margin-left:40px;
+  transition:all 0.4s !important;
+  border-radius:5px;
+}
+
+header .nav-item:hover{
+  background-color: #f82249;
+  color:#fff !important;
+}
+
+
+
+header .nav-item .nav-link{
+  color:#fff !important;
+  font-size:1.4rem;
+}
+
+header .nav-item:hover .nav-link{
+  color:#fff !important;
+}
+
+.navbar-brand{
+  color:#fff !important;
+  font-size:2rem !important;
+}
+  
+
+
+@media screen and (max-width:768px){
+  header ul{
+    padding:20px 10px;
+    text-align: center;
+  }
+
+  header .nav-item{
+    margin-left:0px !important;
+    display: inline-block;
+   
+    margin-bottom:20px;
+    
+  }
+
+  header .nav-item :hover{
+    background-color: #f82249;
+  }
+}
+
+  
+
+
+  /* ======= content =======*/
+
+
+  #main{
+    padding-top:100px;
+  }
+
+
+
+
+
+  .tabl {
+    color:white !important;
+    background-color: rgba(0, 0, 0, 0.541); 
+    padding:20px;
+}
+
+/* Style the buttons inside the tab */
+.tabl button {
+  display: block;
+    background-color: inherit;
+    color:#fff;
+    padding:10px 6px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    border-bottom:1px solid #ddd;
+}
+
+/* Change background color of buttons on hover */
+.tabl button:hover {
+  background-color: #ddd;
+  color: #0e1b4d;
+}
+
+/* Create an active/current "tab button" class */
+.tabl button.acti {
+  background-color: #f82249;
+  color:#fff;
+}
+
+
+
+/* Create an active/current "tab button" class */
+
+/* Style the tab content */
+.tabcontent {
+    height: 300px;
+    padding:40px;
+    color:#0e1b4d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img{
+  width:100%;
+  border-radius: 50%; 
+  width:40px;
+  height:40px;
+}
+
+
+
+
+
+.tab-body {
+  padding:20px;
+  color:white !important;background-color: rgba(0, 0, 0, 0.541); 
+}
+
+/* Style the buttons inside the tab */
+.tab-body button {
+  display: block;
+    background-color:inherit;
+    color: #fff;
+    padding:10px 6px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    border-bottom:1px solid #ddd;
+}
+
+/* Change background color of buttons on hover */
+.tab-body button:hover {
+  background-color: #ddd;
+  color: #0e1b4d;
+}
+
+/* Create an active/current tablink class */
+.tab-body button.active {
+  background-color: #f82249;
+  color:#fff;
+}
+
+/* Style the tab content */
+.tab-body-content {
+  display: none;
+  padding:40px;
+background-color: rgba(0, 0, 0, 0.541); 
+  color:#fff;
+}
+
+
+
+
+#main {
+  width: 100%;
+  background: url(../img/bg.jpg) top center;
+  background-size: cover;
+  position: relative;
+}
+
+#main:before {
+  content: "";
+  background-color: rgba(6, 12, 34, 0.8) !important;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+  background: #101522;
+  padding: 0 0 25px 0;
+  color: #eee;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  background: #040919;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 26px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+#footer .footer-top .footer-info img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #222636;
+  color: #eee;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #f82249;
+  color: #fff;
+}
+
+#footer .footer-top h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f82249;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-left: 5px;
+  color: #f82249;
+  font-size: 18px;
+}
+
+#footer .footer-top .footer-links ul li {
+  border-bottom: 1px solid #262c44;
+  padding: 10px 0;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #eee;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #f82249;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact p {
+  line-height: 26px;
+}
+
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  text-align: center;
+  font-size: 13px;
+  color: #ddd;
+}
+
+
+
+
+.footer-contact a img{
+  width:100%;
+   height:40px;
+}
